@@ -14,3 +14,6 @@
 ---
 - add command handling to index.js
 - add command registration
+- differentiate between guild specific commands and global commands
+- create event handler
+- modify index.js
