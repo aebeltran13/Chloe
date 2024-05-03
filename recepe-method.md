@@ -1,0 +1,16 @@
+# Setup
+- node init
+- node i discord.js
+- node i dotenv
+- Get Discord bot token
+- make config.json
+- create github repo
+- create git ignore
+- create index.js
+- create commands/utility
+- create ping.js command
+- create server.js
+- create user.js
+---
+- add command handling to index.js
+- add command registration

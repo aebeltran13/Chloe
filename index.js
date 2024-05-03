@@ -13,7 +13,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.commands = new Collection();
 
 // Grab all the command files from the commands directory you created earlier
-const foldersPath = path.join(__dirmane, 'commands');
+const foldersPath = path.join(__dirname, 'commands');
 const commandFolders = fs.readdirSync(foldersPath);
 
 // Grab all the command files from the commands directory you created earlier
@@ -43,7 +43,7 @@ client.login(token);
 client.on(Events.InteractionCreate, async interaction => {
 	if(!interaction.isChatInputCommand()) return;
 
-	const command = intecation.client.commands.get(interaction.commandName);
+	const command = interaction.client.commands.get(interaction.commandName);
 
 	if(!command) {
 		console.error(`No command matching ${interaction.commandName} was found.`);
